@@ -1,103 +1,305 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glosario de Agentes e IA</title>
+    <title>Glosario de Agentes e Inteligencia Artificial</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --background: #f8fafc;
+            --card: #ffffff;
+            --text: #334155;
+            --border: #e2e8f0;
         }
-        dt {
-            font-weight: bold;
-            color: #0056b3;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            opacity: .95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+        }
+
+        h2 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        .profile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .term {
+            padding: 20px;
+            border-left: 4px solid var(--primary);
+            margin-bottom: 15px;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+
+        .term h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,.15);
+            padding: 8px 15px;
+            border-radius: 20px;
             margin-top: 15px;
         }
-        dd {
-            margin-left: 20px;
-            margin-bottom: 10px;
+
+        @media(max-width:768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .profile {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<h1>Glosario de Agentes e Inteligencia Artificial</h1>
+<section class="hero">
+    <h1>Glosario de Agentes e Inteligencia Artificial</h1>
+    <p>
+        Repositorio de conceptos fundamentales sobre agentes inteligentes,
+        sistemas multiagente, automatización, IA generativa y herramientas de desarrollo.
+    </p>
+    <div class="badge">Proyecto publicado con GitHub Pages</div>
+</section>
 
-<dl>
+<div class="container">
 
-    <dt>¿Qué es un agente?</dt>
-    <dd>
-        IA automática con un objetivo particular que ejecuta tareas dentro de un entorno determinado.
-    </dd>
+    <div class="card">
+        <h2>Sobre el Proyecto</h2>
 
-    <dt>¿Qué es un multiagente?</dt>
-    <dd>
-        Sistema compuesto por múltiples agentes con diferentes objetivos y ejecuciones especializadas.
-    </dd>
+        <p>
+            Este glosario reúne definiciones utilizadas durante capacitaciones
+            y sesiones de aprendizaje relacionadas con Inteligencia Artificial,
+            agentes autónomos, automatización y plataformas colaborativas.
+        </p>
+    </div>
 
-    <dt>¿Para qué sirve un multiagente?</dt>
-    <dd>
-        Permite delegar diferentes tareas en ejecuciones concretas y disciplinas variadas.
-    </dd>
+    <div class="card profile">
 
-    <dt>¿Qué es Droid?</dt>
-    <dd>
-        Asistente autónomo que permite la ejecución de tareas complejas mediante inteligencia artificial.
-    </dd>
+        <div>
+            <h2>Autor</h2>
 
-    <dt>¿Qué es un Fake Bot?</dt>
-    <dd>
-        Bot automatizado que se hace pasar por un usuario humano.
-    </dd>
+            <p><strong>Jhon Ocampo</strong></p>
 
-    <dt>¿Para qué sirve crear un repositorio?</dt>
-    <dd>
-        Es una biblioteca en la nube que permite almacenar y gestionar cambios de un proyecto.
-    </dd>
+            <p>
+                Profesional enfocado en desarrollo de software,
+                automatización de procesos y tecnologías de inteligencia artificial.
+            </p>
+        </div>
 
-    <dt>¿Qué es GitHub?</dt>
-    <dd>
-        Repositorio ampliamente utilizado para almacenar y gestionar cambios de software en la nube.
-    </dd>
+        <div class="contact">
+            <h2>Contacto</h2>
 
-    <dt>¿Cómo funciona GitHub?</dt>
-    <dd>
-        Almacena código fuente y permite trabajar colaborativamente integrando diferentes ramas de desarrollo.
-    </dd>
+            <p>
+                LinkedIn:
+                <a href="https://linkedin.com/in/TU-PERFIL" target="_blank">
+                    Ver Perfil
+                </a>
+            </p>
 
-    <dt>¿Cuál es la diferencia entre Claude y Droid?</dt>
-    <dd>
-        Claude es una IA generativa y conversacional, mientras que Droid está orientado a la creación y orquestación de agentes.
-    </dd>
+            <p>
+                Email:
+                <a href="mailto:TU_CORREO">
+                    TU_CORREO
+                </a>
+            </p>
 
-    <dt>¿Qué es Open Cloud?</dt>
-    <dd>
-        Plataforma que permite la generación y gestión de código abierto en la nube.
-    </dd>
+            <p>
+                GitHub:
+                <a href="https://github.com/jjor94-cloud" target="_blank">
+                    github.com/jjor94-cloud
+                </a>
+            </p>
+        </div>
 
-    <dt>¿Qué es una sesión de uso en Ollama?</dt>
-    <dd>
-        Sesión abierta que permite almacenar el contexto y la conversación de una interacción específica.
-    </dd>
+    </div>
 
-    <dt>¿Qué es un sistema predictivo de agentes?</dt>
-    <dd>
-        Agente capaz de predecir acciones o respuestas relacionadas con el contexto de una conversación.
-    </dd>
+    <div class="card">
+        <h2>Buscar Concepto</h2>
 
-    <dt>¿Para qué sirve hacer capacitaciones con un agente?</dt>
-    <dd>
-        Permite reducir el contexto necesario durante una sesión y convertir al agente en un experto enfocado en un objetivo específico.
-    </dd>
+        <input
+            type="text"
+            id="search"
+            class="search-box"
+            placeholder="Buscar término..."
+            onkeyup="filtrar()">
+    </div>
 
-    <dt>¿Qué es un Skill?</dt>
-    <dd>
-        Capacidad de ejecutar instrucciones concretas y especializadas dentro de un sistema de inteligencia artificial.
-    </dd>
+    <div class="card">
 
-</dl>
+        <h2>Glosario</h2>
+
+        <div id="glosario">
+
+            <div class="term">
+                <h3>¿Qué es un agente?</h3>
+                <p>IA automática con un objetivo particular ejecutando tareas dentro de un entorno determinado.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Qué es un multiagente?</h3>
+                <p>Sistema compuesto por múltiples agentes con objetivos y ejecuciones diferentes.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Para qué sirve un multiagente?</h3>
+                <p>Permite delegar diferentes tareas en ejecuciones concretas y disciplinas variadas.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Qué es Droid?</h3>
+                <p>Asistente autónomo que permite la ejecución de tareas complejas utilizando IA.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Qué es un Fake Bot?</h3>
+                <p>Bot automatizado que simula el comportamiento de un humano.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Para qué sirve crear un repositorio?</h3>
+                <p>Permite almacenar y gestionar cambios de proyectos en la nube.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Qué es GitHub?</h3>
+                <p>Plataforma ampliamente utilizada para alojar repositorios de software.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Cómo funciona GitHub?</h3>
+                <p>Permite almacenar código, gestionar cambios e integrar diferentes ramas de desarrollo.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Cuál es la diferencia entre Claude y Droid?</h3>
+                <p>Claude es una IA generativa conversacional; Droid está orientado a la creación de agentes.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Qué es Open Cloud?</h3>
+                <p>Plataforma que permite la generación y gestión de código abierto en la nube.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Qué es una sesión de uso en Ollama?</h3>
+                <p>Sesión abierta que almacena el contexto y la conversación de una interacción.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Qué es un sistema predictivo de agentes?</h3>
+                <p>Agente capaz de anticipar acciones relacionadas con el contexto de una conversación.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Para qué sirve hacer capacitaciones con un agente?</h3>
+                <p>Permite convertir al agente en un experto enfocado en un objetivo específico.</p>
+            </div>
+
+            <div class="term">
+                <h3>¿Qué es un Skill?</h3>
+                <p>Capacidad de ejecutar instrucciones concretas y especializadas dentro de una IA.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>Glosario de Agentes e Inteligencia Artificial</strong></p>
+    <p>Desarrollado por Jhon Ocampo</p>
+</footer>
+
+<script>
+function filtrar() {
+    let filtro = document.getElementById("search").value.toLowerCase();
+    let terminos = document.querySelectorAll(".term");
+
+    terminos.forEach(function(item) {
+        let texto = item.innerText.toLowerCase();
+        item.style.display = texto.includes(filtro) ? "block" : "none";
+    });
+}
+</script>
 
 </body>
 </html>
