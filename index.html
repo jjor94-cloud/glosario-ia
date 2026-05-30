@@ -3,47 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JO Knowledge Hub - IA & Agentes</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=XLmhiMEEIWncit0ej5PhSQuGjJ5CuBm3Op3ZHmDe0yEqqoVKPz5J30AC7O6mx6BX6fjjngJ_1GGISVMKtpIOilrk2M3ix5kAzLToe5NqTWxYZb699oUtdRzlpbfu56nEBUxEFjjfdjyWTI8Do6otS6RqFpsboc4HiqJUl6EcKm5IwEo5jdlof25oojQcUwIoqSu6_l-_d8W8duf0PUWjOfDiXE5nGyZz46bzMAG-R1W30VBb4uRC5qf90IKWCyjufUSy7gMZ43EIvfM--P7RFWoYwQXaHoJ8c9LCwLOqCHncMVSlGcbA7B_pFgTUx6oA" charset="UTF-8"></script><style>
-:root{
---bbva:#004481;
---bbva2:#1973b8;
---bg:#f4f7fb;
---card:#fff;
---text:#1f2937;
---muted:#64748b;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
-header{
-background:linear-gradient(135deg,var(--bbva),var(--bbva2));
-color:#fff;padding:80px 20px;
-}
-.container{max-width:1200px;margin:auto}
-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:60px}
-.logo{font-size:28px;font-weight:800}
-.menu a{color:#fff;text-decoration:none;margin-left:20px}
-.hero h1{font-size:56px;font-weight:800}
-.hero p{max-width:700px;margin-top:15px;opacity:.95;font-size:18px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-top:-40px;padding:0 20px}
-.stat{background:#fff;padding:25px;border-radius:16px;box-shadow:0 8px 25px rgba(0,0,0,.08);text-align:center}
-.stat h2{color:var(--bbva)}
-.main{max-width:1200px;margin:auto;padding:30px 20px}
-.card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 5px 20px rgba(0,0,0,.06);margin-bottom:24px}
-.section-title{margin-bottom:15px;color:var(--bbva)}
-.search{width:100%;padding:14px;border-radius:12px;border:1px solid #dbe3ee}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
-.term{background:#fff;border-radius:16px;padding:22px;border-left:5px solid var(--bbva);box-shadow:0 4px 15px rgba(0,0,0,.05)}
-.term h3{margin-bottom:10px;color:var(--bbva)}
-.profile{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.tag{display:inline-block;background:#e8f1fb;color:var(--bbva);padding:8px 12px;border-radius:30px;margin:5px}
-footer{background:#0f172a;color:#fff;text-align:center;padding:35px;margin-top:30px}
-@media(max-width:768px){
-.hero h1{font-size:36px}
-.profile{grid-template-columns:1fr}
-.menu{display:none}
-}
+<title>JO Knowledge Hub - Glosario IA</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tcSKOYjjdMeHvCsfOkLk07neg5pmMRYfmMtbRirAJ9Ovs_d_YF9BP5q7IEvgoxUPTkr23ykjVlY9h96xZFijnXK7rUB7pxrVGlUC13XSRmnU9E0yUTeQ0AeiTsqO2Gz0ITAKab0_aJMJIV4fx_YmphPJL4yImoPgUnWiiVfVrkQSsD-_bxTunGFPUADq0u4rRFFrp-Qj3UL0a2-_BfJ8h5jY_0dBiya4xxK638rSckkSfG9fr6Rf-TLkeaadEcWnDdcPfm6ud32oWAug5OHEuoXH0ima4GFrrk241CRDBZ5wlwiQ6RkV08NztTNl_VKo" charset="UTF-8"></script><style>
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f5f7fb;color:#1f2937}
+.sidebar{position:fixed;left:0;top:0;width:260px;height:100%;background:#004481;color:#fff;padding:20px;overflow:auto}
+.sidebar h2{font-size:20px}
+.sidebar a{display:block;color:#fff;text-decoration:none;padding:8px 0}
+.main{margin-left:280px;padding:30px}
+.hero{background:linear-gradient(135deg,#004481,#1973b8);color:#fff;padding:40px;border-radius:16px}
+.card{background:#fff;border-radius:14px;padding:20px;margin:20px 0;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.search{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px}
+.term{border-left:4px solid #004481;padding:12px;margin:12px 0;background:#fafafa}
+.term h3{margin:0 0 8px 0;color:#004481}
+.tags span{display:inline-block;background:#e8f1fb;padding:8px 12px;border-radius:20px;margin:4px}
+@media(max-width:800px){.sidebar{position:relative;width:auto;height:auto}.main{margin-left:0}}
 </style>
 <script>
 function filtrar(){
@@ -55,91 +28,67 @@ t.style.display=t.innerText.toLowerCase().includes(f)?'block':'none';
 </script>
 </head>
 <body>
-
-<header>
-<div class="container">
-<nav>
-<div class="logo">JO Knowledge Hub</div>
-<div class="menu">
+<div class="sidebar">
+<h2>JO Knowledge Hub</h2>
+<a href="#inicio">Inicio</a>
 <a href="#proyecto">Proyecto</a>
+<a href="#ruta">Ruta de Aprendizaje</a>
 <a href="#glosario">Glosario</a>
 <a href="#contacto">Contacto</a>
 </div>
-</nav>
-
-<div class="hero">
-<h1>Glosario de Agentes e Inteligencia Artificial</h1>
-<p>Portal de conocimiento inspirado en BBVA Developer para capacitación, documentación y consulta de conceptos relacionados con IA, automatización y sistemas multiagente.</p>
-</div>
-</div>
-</header>
-
-<section class="stats">
-<div class="stat"><h2>14+</h2><p>Conceptos</p></div>
-<div class="stat"><h2>IA</h2><p>Automatización</p></div>
-<div class="stat"><h2>Cloud</h2><p>Tecnologías</p></div>
-<div class="stat"><h2>GitHub</h2><p>Colaboración</p></div>
-</section>
 
 <div class="main">
-
-<div class="card" id="proyecto">
-<h2 class="section-title">Sobre el Proyecto</h2>
-<p>Repositorio de conocimiento para entender conceptos clave de Inteligencia Artificial, agentes autónomos, sistemas multiagente, plataformas cloud y herramientas de desarrollo modernas.</p>
+<div id="inicio" class="hero">
+<h1>Glosario de Agentes e Inteligencia Artificial</h1>
+<p>Portal de documentación inspirado en BBVA Developer.</p>
 </div>
 
-<div class="profile card" id="contacto">
-<div>
-<h2 class="section-title">Autor</h2>
-<p><strong>Jhon Ocampo</strong></p>
-<p>Ingeniero de Software | Backend Developer | IA & Automatización</p>
+<div id="proyecto" class="card">
+<h2>Sobre el Proyecto</h2>
+<p>Repositorio de conocimiento para conceptos de IA, agentes autónomos, automatización, cloud y colaboración.</p>
 </div>
-<div>
-<h2 class="section-title">Contacto</h2>
-<p>LinkedIn: https://linkedin.com/in/jhon-ocampo</p>
-<p>Email: jhon.ocampo@email.com</p>
-<p>GitHub: https://github.com/jjor94-cloud</p>
+
+<div id="ruta" class="card">
+<h2>Ruta de Aprendizaje</h2>
+<div class="tags">
+<span>Agentes</span><span>Multiagentes</span><span>Droid</span><span>Claude</span>
+<span>Ollama</span><span>GitHub</span><span>Open Cloud</span><span>Skills</span>
 </div>
 </div>
 
 <div class="card">
-<h2 class="section-title">Tecnologías Relacionadas</h2>
-<span class="tag">Inteligencia Artificial</span>
-<span class="tag">Multiagentes</span>
-<span class="tag">GitHub</span>
-<span class="tag">Cloud</span>
-<span class="tag">Automatización</span>
-<span class="tag">Ollama</span>
+<h2>Buscar Concepto</h2>
+<input id="buscar" class="search" onkeyup="filtrar()" placeholder="Buscar...">
 </div>
 
-<div class="card" id="glosario">
-<h2 class="section-title">Buscar Concepto</h2>
-<input id="buscar" class="search" onkeyup="filtrar()" placeholder="Buscar concepto...">
-</div>
+<div id="glosario" class="card">
+<h2>Glosario Completo</h2>
 
-<div class="grid">
-<div class="term"><h3>¿Qué es un agente?</h3><p>IA automática con un objetivo particular ejecutando tareas dentro de un entorno determinado.</p></div>
-<div class="term"><h3>¿Qué es un multiagente?</h3><p>Sistema compuesto por múltiples agentes con diferentes objetivos y ejecuciones.</p></div>
-<div class="term"><h3>¿Para qué sirve un multiagente?</h3><p>Permite delegar tareas especializadas entre agentes.</p></div>
-<div class="term"><h3>¿Qué es Droid?</h3><p>Asistente autónomo para la ejecución de tareas complejas mediante IA.</p></div>
-<div class="term"><h3>¿Qué es un Fake Bot?</h3><p>Bot automatizado que simula el comportamiento humano.</p></div>
-<div class="term"><h3>Repositorio</h3><p>Biblioteca en la nube para almacenar y gestionar cambios.</p></div>
-<div class="term"><h3>GitHub</h3><p>Plataforma para alojar repositorios y colaborar en proyectos.</p></div>
-<div class="term"><h3>Claude vs Droid</h3><p>Claude es una IA conversacional; Droid está enfocado en agentes.</p></div>
-<div class="term"><h3>Open Cloud</h3><p>Plataforma para generación y gestión de código abierto.</p></div>
-<div class="term"><h3>Sesión en Ollama</h3><p>Contexto persistente de una conversación específica.</p></div>
-<div class="term"><h3>Sistema predictivo de agentes</h3><p>Agente que anticipa acciones según el contexto.</p></div>
-<div class="term"><h3>Capacitaciones con agentes</h3><p>Permite especializar un agente en objetivos concretos.</p></div>
-<div class="term"><h3>Skill</h3><p>Capacidad específica para ejecutar instrucciones especializadas.</p></div>
-</div>
+<div class="term"><h3>¿Qué es un agente?</h3><p>IA automática con un objetivo particular ejecutando tareas de entorno.</p></div>
+<div class="term"><h3>¿Qué es un multiagente?</h3><p>Sistema de múltiples agentes con diferentes objetivos y ejecuciones diferentes.</p></div>
+<div class="term"><h3>¿Para qué sirve un multiagente?</h3><p>Para delegar diferentes tareas en ejecuciones concretas y disciplinas varias.</p></div>
+<div class="term"><h3>¿Qué es Droid?</h3><p>Asistente autónomo que permite ejecución de tareas complejas con IA.</p></div>
+<div class="term"><h3>¿Qué es un Fake Bot?</h3><p>Bot automatizado que se hace pasar por humano.</p></div>
+<div class="term"><h3>¿Para qué sirve crear un repositorio?</h3><p>Biblioteca en la nube que permite almacenar cambios.</p></div>
+<div class="term"><h3>¿Qué es GitHub?</h3><p>Repositorio muy utilizado para contener cambios de software en la nube.</p></div>
+<div class="term"><h3>¿Cómo funciona GitHub?</h3><p>Almacena código de software y permite integrar diferentes ramas.</p></div>
+<div class="term"><h3>¿Cuál es la diferencia entre Claude y Droid?</h3><p>Claude es generativa y conversacional; Droid es generadora de agentes.</p></div>
+<div class="term"><h3>¿Qué es Open Cloud?</h3><p>Plataforma que permite la generación de código abierto.</p></div>
+<div class="term"><h3>¿Qué es una sesión de uso en Ollama?</h3><p>Sesión abierta que permite almacenar la conversación puntual.</p></div>
+<div class="term"><h3>¿Qué es un sistema predictivo de agentes?</h3><p>Agente que predice acciones relacionadas dentro de una conversación.</p></div>
+<div class="term"><h3>¿Para qué sirve hacer capacitaciones con un agente?</h3><p>Permite reducir contexto en sesión y convertirlo en un experto orientado a objetivos.</p></div>
+<div class="term"><h3>¿Qué es un Skill?</h3><p>Capacidad de ejecutar instrucciones concretas dentro de una IA.</p></div>
 
 </div>
 
-<footer>
-<h3>JO Knowledge Hub</h3>
-<p>Glosario de Agentes e Inteligencia Artificial</p>
-<p>© 2026 Jhon Ocampo</p>
-</footer>
+<div id="contacto" class="card">
+<h2>Autor y Contacto</h2>
+<p><strong>Jhon Ocampo</strong></p>
+<p>Ingeniero de Software | IA y Automatización</p>
+<p>LinkedIn: https://linkedin.com/in/jhon-ocampo</p>
+<p>GitHub: https://github.com/jjor94-cloud</p>
+</div>
 
+</div>
 </body>
 </html>
