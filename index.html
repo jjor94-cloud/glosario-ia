@@ -1,302 +1,334 @@
 <!DOCTYPE html>
+
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glosario de Agentes e Inteligencia Artificial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glosario de Agentes e Inteligencia Artificial</title>
 
-    <style>
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e293b;
-            --background: #f8fafc;
-            --card: #ffffff;
-            --text: #334155;
-            --border: #e2e8f0;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+:root{
+    --primary:#2563eb;
+    --dark:#0f172a;
+    --gray:#64748b;
+    --light:#f8fafc;
+    --card:#ffffff;
+    --border:#e2e8f0;
+}
 
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: var(--background);
-            color: var(--text);
-            line-height: 1.7;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .hero {
-            background: linear-gradient(135deg, #2563eb, #1e40af);
-            color: white;
-            text-align: center;
-            padding: 70px 20px;
-        }
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+}
 
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
+.navbar{
+    position:sticky;
+    top:0;
+    background:white;
+    border-bottom:1px solid var(--border);
+    z-index:1000;
+}
 
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            opacity: .95;
-        }
+.nav-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 30px 20px;
-        }
+.logo{
+    font-size:22px;
+    font-weight:700;
+}
 
-        .card {
-            background: var(--card);
-            border-radius: 16px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.08);
-        }
+.nav-links a{
+    text-decoration:none;
+    color:var(--dark);
+    margin-left:25px;
+}
 
-        h2 {
-            color: var(--secondary);
-            margin-bottom: 15px;
-        }
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    padding:90px 20px;
+    text-align:center;
+}
 
-        .profile {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
 
-        .contact a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
+.hero p{
+    max-width:800px;
+    margin:auto;
+    opacity:.95;
+}
 
-        .search-box {
-            width: 100%;
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid var(--border);
-            margin-bottom: 25px;
-            font-size: 16px;
-        }
+.hero-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:white;
+    color:#2563eb;
+    padding:14px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+}
 
-        .term {
-            padding: 20px;
-            border-left: 4px solid var(--primary);
-            margin-bottom: 15px;
-            background: #f8fafc;
-            border-radius: 10px;
-        }
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
 
-        .term h3 {
-            color: var(--primary);
-            margin-bottom: 8px;
-        }
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:-50px;
+}
 
-        footer {
-            background: var(--secondary);
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 50px;
-        }
+.stat-card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
 
-        .badge {
-            display: inline-block;
-            background: rgba(255,255,255,.15);
-            padding: 8px 15px;
-            border-radius: 20px;
-            margin-top: 15px;
-        }
+.stat-card h2{
+    color:var(--primary);
+}
 
-        @media(max-width:768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
+.section{
+    margin-top:50px;
+}
 
-            .profile {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+.section-title{
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.search{
+    width:100%;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid var(--border);
+    margin-bottom:25px;
+}
+
+.glossary{
+    display:grid;
+    gap:18px;
+}
+
+.term{
+    background:white;
+    padding:22px;
+    border-radius:14px;
+    border-left:5px solid var(--primary);
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+}
+
+.term h3{
+    margin-bottom:10px;
+    color:var(--primary);
+}
+
+.footer{
+    margin-top:60px;
+    background:var(--dark);
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:34px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+}
+</style>
+
 </head>
 
 <body>
 
+<nav class="navbar">
+    <div class="nav-content">
+        <div class="logo">JO Knowledge Hub</div>
+
+```
+    <div class="nav-links">
+        <a href="#proyecto">Proyecto</a>
+        <a href="#glosario">Glosario</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</div>
+```
+
+</nav>
+
 <section class="hero">
     <h1>Glosario de Agentes e Inteligencia Artificial</h1>
-    <p>
-        Repositorio de conceptos fundamentales sobre agentes inteligentes,
-        sistemas multiagente, automatización, IA generativa y herramientas de desarrollo.
-    </p>
-    <div class="badge">Proyecto publicado con GitHub Pages</div>
+
+```
+<p>
+    Plataforma de conocimiento orientada a conceptos de IA,
+    agentes autónomos, automatización y ecosistemas de desarrollo moderno.
+</p>
+
+<a href="#glosario" class="hero-btn">
+    Explorar Conceptos
+</a>
+```
+
 </section>
 
 <div class="container">
 
-    <div class="card">
-        <h2>Sobre el Proyecto</h2>
+```
+<div class="stats">
 
-        <p>
-            Este glosario reúne definiciones utilizadas durante capacitaciones
-            y sesiones de aprendizaje relacionadas con Inteligencia Artificial,
-            agentes autónomos, automatización y plataformas colaborativas.
-        </p>
+    <div class="stat-card">
+        <h2>14+</h2>
+        <p>Conceptos</p>
     </div>
 
-    <div class="card profile">
-
-        <div>
-            <h2>Autor</h2>
-
-            <p><strong>Jhon Ocampo</strong></p>
-
-            <p>
-                Profesional enfocado en desarrollo de software,
-                automatización de procesos y tecnologías de inteligencia artificial.
-            </p>
-        </div>
-
-        <div class="contact">
-            <h2>Contacto</h2>
-
-            <p>
-                LinkedIn:
-                <a href="https://linkedin.com/in/TU-PERFIL" target="_blank">
-                    Ver Perfil
-                </a>
-            </p>
-
-            <p>
-                Email:
-                <a href="mailto:TU_CORREO">
-                    TU_CORREO
-                </a>
-            </p>
-
-            <p>
-                GitHub:
-                <a href="https://github.com/jjor94-cloud" target="_blank">
-                    github.com/jjor94-cloud
-                </a>
-            </p>
-        </div>
-
+    <div class="stat-card">
+        <h2>IA</h2>
+        <p>Automatización</p>
     </div>
 
-    <div class="card">
-        <h2>Buscar Concepto</h2>
-
-        <input
-            type="text"
-            id="search"
-            class="search-box"
-            placeholder="Buscar término..."
-            onkeyup="filtrar()">
+    <div class="stat-card">
+        <h2>Cloud</h2>
+        <p>Desarrollo</p>
     </div>
 
-    <div class="card">
-
-        <h2>Glosario</h2>
-
-        <div id="glosario">
-
-            <div class="term">
-                <h3>¿Qué es un agente?</h3>
-                <p>IA automática con un objetivo particular ejecutando tareas dentro de un entorno determinado.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Qué es un multiagente?</h3>
-                <p>Sistema compuesto por múltiples agentes con objetivos y ejecuciones diferentes.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Para qué sirve un multiagente?</h3>
-                <p>Permite delegar diferentes tareas en ejecuciones concretas y disciplinas variadas.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Qué es Droid?</h3>
-                <p>Asistente autónomo que permite la ejecución de tareas complejas utilizando IA.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Qué es un Fake Bot?</h3>
-                <p>Bot automatizado que simula el comportamiento de un humano.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Para qué sirve crear un repositorio?</h3>
-                <p>Permite almacenar y gestionar cambios de proyectos en la nube.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Qué es GitHub?</h3>
-                <p>Plataforma ampliamente utilizada para alojar repositorios de software.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Cómo funciona GitHub?</h3>
-                <p>Permite almacenar código, gestionar cambios e integrar diferentes ramas de desarrollo.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Cuál es la diferencia entre Claude y Droid?</h3>
-                <p>Claude es una IA generativa conversacional; Droid está orientado a la creación de agentes.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Qué es Open Cloud?</h3>
-                <p>Plataforma que permite la generación y gestión de código abierto en la nube.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Qué es una sesión de uso en Ollama?</h3>
-                <p>Sesión abierta que almacena el contexto y la conversación de una interacción.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Qué es un sistema predictivo de agentes?</h3>
-                <p>Agente capaz de anticipar acciones relacionadas con el contexto de una conversación.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Para qué sirve hacer capacitaciones con un agente?</h3>
-                <p>Permite convertir al agente en un experto enfocado en un objetivo específico.</p>
-            </div>
-
-            <div class="term">
-                <h3>¿Qué es un Skill?</h3>
-                <p>Capacidad de ejecutar instrucciones concretas y especializadas dentro de una IA.</p>
-            </div>
-
-        </div>
-
+    <div class="stat-card">
+        <h2>GitHub</h2>
+        <p>Colaboración</p>
     </div>
 
 </div>
 
-<footer>
-    <p><strong>Glosario de Agentes e Inteligencia Artificial</strong></p>
+<section id="proyecto" class="section">
+    <div class="card">
+        <h2 class="section-title">Sobre el Proyecto</h2>
+
+        <p>
+            Este repositorio recopila conceptos utilizados en procesos de
+            capacitación relacionados con agentes inteligentes, sistemas
+            multiagente, IA generativa y plataformas de desarrollo.
+        </p>
+    </div>
+</section>
+
+<section id="contacto" class="section">
+    <div class="card">
+        <h2 class="section-title">Autor</h2>
+
+        <p><strong>Jhon Ocampo</strong></p>
+        <p>Ingeniero de Software | Automatización | Inteligencia Artificial</p>
+
+        <br>
+
+        <p>LinkedIn: https://linkedin.com/in/TU-PERFIL</p>
+        <p>Email: tucorreo@correo.com</p>
+        <p>GitHub: https://github.com/jjor94-cloud</p>
+    </div>
+</section>
+
+<section id="glosario" class="section">
+
+    <input
+        type="text"
+        id="search"
+        class="search"
+        placeholder="Buscar concepto..."
+        onkeyup="filterTerms()">
+
+    <div class="glossary">
+
+        <div class="term">
+            <h3>¿Qué es un agente?</h3>
+            <p>IA automática con un objetivo particular ejecutando tareas dentro de un entorno determinado.</p>
+        </div>
+
+        <div class="term">
+            <h3>¿Qué es un multiagente?</h3>
+            <p>Sistema compuesto por múltiples agentes con diferentes objetivos y ejecuciones.</p>
+        </div>
+
+        <div class="term">
+            <h3>¿Para qué sirve un multiagente?</h3>
+            <p>Permite delegar tareas especializadas en diferentes agentes.</p>
+        </div>
+
+        <div class="term">
+            <h3>¿Qué es Droid?</h3>
+            <p>Asistente autónomo que ejecuta tareas complejas utilizando IA.</p>
+        </div>
+
+        <div class="term">
+            <h3>¿Qué es un Skill?</h3>
+            <p>Capacidad específica que permite ejecutar instrucciones concretas dentro de un sistema de IA.</p>
+        </div>
+
+    </div>
+
+</section>
+```
+
+</div>
+
+<footer class="footer">
+    <h3>Glosario de Agentes e Inteligencia Artificial</h3>
     <p>Desarrollado por Jhon Ocampo</p>
 </footer>
 
 <script>
-function filtrar() {
-    let filtro = document.getElementById("search").value.toLowerCase();
-    let terminos = document.querySelectorAll(".term");
+function filterTerms() {
 
-    terminos.forEach(function(item) {
-        let texto = item.innerText.toLowerCase();
-        item.style.display = texto.includes(filtro) ? "block" : "none";
+    let filter =
+        document.getElementById("search")
+        .value
+        .toLowerCase();
+
+    let terms =
+        document.querySelectorAll(".term");
+
+    terms.forEach(term => {
+
+        let text =
+            term.innerText.toLowerCase();
+
+        term.style.display =
+            text.includes(filter)
+            ? "block"
+            : "none";
     });
 }
 </script>
